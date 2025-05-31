@@ -1,0 +1,17 @@
+:root{
+    --color-green: rgba(26, 146, 94, 0.8);
+    --color-green-light: rgba(33, 177, 114, 0.199);
+    --color-text: rgba(34, 163, 120, 0.8);
+    --color-text-light: rgba(148, 148, 148, 0.8);
+    --color-bg: rgba(224, 224, 224, 0.8);
+}
+
+.btn-icon i{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}

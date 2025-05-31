@@ -1,0 +1,72 @@
+/* Más gorda */
+.pt-serif-regular{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Cursiva */
+.mystery-quest-regular {
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --color-green: rgba(26, 146, 94, 0.8);
+    --color-green-light: rgba(33, 177, 114, 0.199);
+    --color-text: rgba(34, 163, 120, 0.8);
+    --color-text-light: rgba(255, 45, 45, 0.8);
+    --color-bg: rgba(224, 224, 224, 0.8);
+}
+*{
+    background-color: var(--color-bg);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+header p{
+    font-size: 32px;
+    color: var(--color-green);
+}
+.back button {
+    color: white;
+    background-color: var(--color-green);
+}
+.back button:hover{
+    color: white;
+    background-color: var(--color-green);
+}
+
+main{
+    height: 90vh;
+    width: 100vw;
+}
+.main-container button {
+    color: white;
+    background-color: var(--color-green);
+}
+.main-container button:hover{
+    color: white;
+    background-color: var(--color-green);
+}
+.bg-green{background-color: var(--color-green) ;}
+.bg-green-light{background-color: var(--color-green-light);}
+.bg-bg{background-color: var(--color-bg);}
+.bg-none{background-color: transparent;}
+.text-green{color:var(--color-text)};
+.text-gray-light{color:var(--color-text-light);};
+
+
+.rotate-center:hover{
+    animation:rotate-center 0.4s
+} 
+@keyframes rotate-center{
+    0%{
+        transform:rotate(0)
+    }100%{
+        transform:rotate(360deg)
+    }
+}
