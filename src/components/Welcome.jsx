@@ -22,7 +22,7 @@ export const Welcome = ({handlePag}) => {
                     <p className="pt-serif-regular fs-6 bg-none w-75 text-body-secondary">Primero tendrás que realizar un cuestionario para conocer tu huella de carbono Vayamos a eso</p>
                     <div className="btn-icon w-100 d-flex align-items-center justify-content-center gap-2 mt-4">
                         <i className="bg-green bi bi-arrow-left text-light"></i>
-                        <button className='btn w-25 d-flex align-items-center justify-content-center'>Continuar <i class="bg-none bi bi-arrow-right"></i></button>
+                        <button className='btn w-25 d-flex align-items-center justify-content-center' onClick={() => handlePag("questions")}>Continuar <i className="bg-none bi bi-arrow-right"></i></button>
                     </div>
 
                 

@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 const UserContext = createContext();
 const UserProvider = ({children}) => {
@@ -6,9 +6,7 @@ const UserProvider = ({children}) => {
     const handleUser = (uName) => {
         setUser(uName);
     }
-    useEffect(() => {
-        console.log(user);
-    }, [user]);
+
     const data = {
         user,
         handleUser,
