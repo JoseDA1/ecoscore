@@ -2,6 +2,21 @@ import React from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import "../css/HomePages.css";
 import "../css/Style.css";
+
+const countries = [
+    "Colombia",
+    "Estados Unidos",
+    "México",
+    "China",
+    "India",
+    "Argentina",
+    "Francia",
+    "Reino Unido",
+    "Brasil",
+    "Ecuador",
+    "Rusia",
+];
+
 export const HomePages = ({handlePag}) => {
   return (
     //Home
@@ -21,9 +36,9 @@ export const HomePages = ({handlePag}) => {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/1">EN</Dropdown.Item>
+                        <Dropdown.Item href="#/1">ES</Dropdown.Item>
                         <Dropdown.Item href="#/2">EN</Dropdown.Item>
-                        <Dropdown.Item href="#/3">EN</Dropdown.Item>
+                        <Dropdown.Item href="#/3">FR</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 </div>
@@ -43,7 +58,11 @@ export const HomePages = ({handlePag}) => {
                 <div className="fo-text mt-4 d-flex flex-column justify-content-between align-items-center">
                     <p className='fw-medium'>Selecciona tu pais</p>
                     <select defaultValue="colombia" name="country" id="country" className='form-select w-25 pt-serif-regular fw-medium'>
-                        <option value="colombia">Colombia</option>
+                       {
+                        countries.map((country, i) => {
+                             return <option key={i} value={country}>{country}</option>
+                        })
+                       }
                     </select>
                     <button className='btn mt-4 bg-green text-light custom-btn' onClick={() => handlePag("user")}>Empezar</button>
                 </div>
