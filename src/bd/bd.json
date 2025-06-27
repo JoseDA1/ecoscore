@@ -1,0 +1,24 @@
+{
+    "data":[
+        {
+            "id":"1",
+            "question":"Transporte",
+            "context":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu quam sed sapien semper pulvinar. Aenean nisl leo, dictum a ex a, euismod rhoncus turpis. Aliquam sollicitudin nisi augue, id laoreet elit fermentum nec",
+            "answers":{
+                "1":{"res":"Primera Pregunta", "CO2":1000},
+                "2":{"res":"Segunda Pregunta", "CO2":12000},
+                "3":{"res":"Tercara Pregunta", "CO2":13000}
+            }
+        },
+        {
+            "id":"2",
+            "question":"Hogar",
+            "context":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu quam sed sapien semper pulvinar. Aenean nisl leo, dictum a ex a, euismod rhoncus turpis. Aliquam sollicitudin nisi augue, id laoreet elit fermentum nec",
+            "answers":{
+                "1":{"res":"A veces", "CO2":1000},
+                "2":{"res":"Sí", "CO2":14000},
+                "3":{"res":"No", "CO2":11000}
+            }
+        }
+    ]
+}

@@ -7,6 +7,7 @@ import { Questionnarie } from './Questionnarie';
 import { Results } from './Results';
 import { Recommendations } from './Recommendations';
 import { Improvements } from './Improvements';
+import { QuestionProvider } from '../Context/QuestionContext';
 
 export const HandlePages = () => {
     const [pag, setPag] = useState();
@@ -22,10 +23,16 @@ export const HandlePages = () => {
         {<UserProvider>
         {pag == "user" && <UserPage handlePag={handlePag}/>}
         {pag == "welcome" && <Welcome handlePag={handlePag}/>}
-        {pag == "questions" && <Questionnarie handlePag={handlePag}/>}
-        {pag == "results" && <Results handlePag={handlePag}/>}
-        {pag == "recommendation" && <Recommendations handlePag={handlePag}/>}
-        {pag == "improvements" && <Improvements handlePag={handlePag}/>}
+        {
+          <QuestionProvider>
+            {pag == "questions" && <Questionnarie handlePag={handlePag}/>}
+
+            {pag == "results" && <Results handlePag={handlePag}/>}
+            {pag == "recommendation" && <Recommendations handlePag={handlePag}/>}
+            {pag == "improvements" && <Improvements handlePag={handlePag}/>}
+          </QuestionProvider>
+        }
+        
         </UserProvider>}
     </>
   )

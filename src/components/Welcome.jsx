@@ -1,12 +1,13 @@
 import React, {  useContext } from 'react';
-import { HomePages } from './HomePages';
 import { HeaderPage } from './HeaderPage';
 import "../css/Style.css";
 import "../css/Welcome.css";
 import UserContext from '../Context/UserContext';
 
+
 export const Welcome = ({handlePag}) => {
     const {user} = useContext(UserContext);
+
 
   return (
     <>
